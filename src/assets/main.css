@@ -627,8 +627,8 @@ body {
     }
 
     .middle-wrapper_task {
-        padding: 20px;
-        font-size: 15px;
+        padding: 30px;
+        font-size: 14px;
     }
 
     .middle-wrapper_img {
@@ -677,7 +677,7 @@ body {
 
 @media (max-width: 375px) {
     .middle-wrapper_task {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .bottom-wrapper_button {
@@ -700,7 +700,7 @@ body {
     }
 
     .middle-wrapper_task {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .button-wrapper_btn {
