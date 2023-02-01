@@ -11,13 +11,11 @@ body {
 
 :root {
     --color: white;
-    --background: linear-gradient(45deg, rgba(185,141,156,1) 0%, rgba(91,129,184,1) 100%);
-    --background2: linear-gradient(45deg, rgba(151,70,95,1) 0%, rgba(45,98,171,1) 100%);
-    --background3:  linear-gradient(135deg, rgba(45,98,171,1) 0%, rgba(151,70,95,1) 100%);
+    --background: linear-gradient(45deg, rgba(185, 141, 156, 1) 0%, rgba(91, 129, 184, 1) 100%);
+    --background2: linear-gradient(45deg, rgba(151, 70, 95, 1) 0%, rgba(45, 98, 171, 1) 100%);
+    --background3: linear-gradient(135deg, rgba(45, 98, 171, 1) 0%, rgba(151, 70, 95, 1) 100%);
     --index: calc(1vw + 1vh);
 }
-
-/* background: linear-gradient(45deg, rgba(185,141,156,1) 0%, rgba(91,129,184,1) 100%); */
 
 .main-section {
     padding-left: 50px;
@@ -28,7 +26,7 @@ body {
     color: var(--color);
 }
 
-.text-wrapper_olymp{
+.text-wrapper_olymp {
     font-size: 25px;
     font-weight: 800;
 }
@@ -93,21 +91,21 @@ body {
     margin-top: -12px;
     font-size: 16px;
     font-weight: 700;
-    color:#cfcfcf;
+    color: #cfcfcf;
     transition: all 1s ease;
 }
 
 
-.pick-wrapper{
-  transition: all .4s ease;
+.pick-wrapper {
+    transition: all .4s ease;
     height: 20px;
 }
 
-.pick-wrapper:hover .pick-task{
+.pick-wrapper:hover .pick-task {
     display: none;
 }
 
-.pick-wrapper:hover{
+.pick-wrapper:hover {
     height: 200px;
 }
 
@@ -115,15 +113,15 @@ body {
 .pick-wrapper_year,
 .pick-wrapper_task {
     transform: translateY(-200px);
-  overflow: hidden;
-  transition: all 0.5s ease-out;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
 }
 
 .pick-wrapper:hover .pick-wrapper_class,
 .pick-wrapper:hover .pick-wrapper_year,
 .pick-wrapper:hover .pick-wrapper_task {
-    
-  transform: translateY(0px);
+
+    transform: translateY(0px);
 }
 
 /* animation for class */
@@ -134,9 +132,10 @@ body {
     z-index: 0;
     transition: all .5s ease 0s;
     border-radius: 8px;
-  }
+}
 
-  .start-home, .radio-hidden:nth-child(1):checked~.animation{
+.start-home,
+.radio-hidden:nth-child(1):checked~.animation {
     width: 38px;
     height: 30px;
     left: 5px;
@@ -144,9 +143,11 @@ body {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px; 
-  }
-  .start-home, .radio-hidden:nth-child(2):checked~.animation{
+    border-top-left-radius: 15px;
+}
+
+.start-home,
+.radio-hidden:nth-child(2):checked~.animation {
     width: 40px;
     height: 30px;
     left: 115px;
@@ -155,38 +156,40 @@ body {
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-  }
-  .start-radio, .radio-hidden:nth-child(3):checked~.animation{
+}
+
+.start-radio,
+.radio-hidden:nth-child(3):checked~.animation {
     width: 40px;
     left: 57px;
     background-color: #ffffff;
-    border-radius: 8px; 
-  }
+    border-radius: 8px;
+}
 
-  .radio-hidden:checked + .radio-label {
+.radio-hidden:checked+.radio-label {
     transition: all .6s ease-in-out;
     color: #545454 !important;
-  }
+}
 
-  .radio-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	border: 0;
-	clip: rect(0, 0, 0, 0);
-	-webkit-clip-path: inset(100%);
-	clip-path: inset(100%);
+.radio-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
 }
 
 .radio-label {
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 6px;
-	font-size: 16px;
-	font-weight: 400;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
     z-index: 2;
     cursor: pointer;
     color: rgb(255, 255, 255);
@@ -195,37 +198,36 @@ body {
 
 /* animation for year */
 
-  .radio-hidden2 {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	border: 0;
-	clip: rect(0, 0, 0, 0);
-	-webkit-clip-path: inset(100%);
-	clip-path: inset(100%);
+.radio-hidden2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
 }
 
 .radio-label2 {
-	display: inline-block;
-	padding: 3px 10px;
-	border-radius: 6px;
-	font-size: 16px;
-	font-weight: 400;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
     z-index: 5;
     cursor: pointer;
     color: rgb(199, 199, 199);
 }
 
-.radio-hidden2:checked + .radio-label2 {
+.radio-hidden2:checked+.radio-label2 {
     background-color: #ffffff;
     transition: all 0.4s ease-in-out;
     color: #545454;
-  }
+}
 
-  
 .arrow {
     font-size: 20px;
     cursor: pointer;
@@ -251,38 +253,39 @@ body {
     color: rgb(199, 199, 199);
 
 }
+
 /* animation for tasks */
 
 
-  .radio-hidden3 {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	border: 0;
-	clip: rect(0, 0, 0, 0);
-	-webkit-clip-path: inset(100%);
-	clip-path: inset(100%);
+.radio-hidden3 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
     z-index: 2;
 }
 
 .radio-label3 {
-	display: inline-block;
-	padding: 5px 15px;
-	border-radius: 6px;
-	font-size: 16px;
-	font-weight: 400;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
     z-index: 2;
     cursor: pointer;
     color: rgb(199, 199, 199);
 }
 
 
-.radio-hidden3:checked + .radio-label3 {
+.radio-hidden3:checked+.radio-label3 {
     border-color: transparent;
-	background-color: #ffffff;
+    background-color: #ffffff;
     transition: all 0.4s ease-in-out;
     color: #545454;
 }
@@ -296,7 +299,7 @@ body {
     flex-wrap: wrap;
 }
 
-.header-wrapper_task{
+.header-wrapper_task {
     width: 400px;
     height: 60px;
     background: var(--background2);
@@ -334,7 +337,7 @@ body {
     margin-right: 20px;
 }
 
-.middle-wrapper{
+.middle-wrapper {
     margin-top: 20px;
     display: flex;
 }
@@ -352,11 +355,12 @@ body {
 .task-img {
     width: 350px;
 }
-.task-img_modal{
+
+.task-img_modal {
     width: 900px;
 }
 
-.middle-wrapper_img{
+.middle-wrapper_img {
     height: 300px;
     margin: 0 auto;
     background: var(--background);
@@ -367,7 +371,7 @@ body {
     margin-right: 20px;
 }
 
-.middle-wrapper_img_toogle{
+.middle-wrapper_img_toogle {
     height: 300px;
     margin: 0 auto;
     background: white;
@@ -378,7 +382,7 @@ body {
     margin-right: 20px;
 }
 
-.middle-wrapper_button{
+.middle-wrapper_button {
     width: 30px;
     height: 30px;
     background-color: #d2d2d2;
@@ -416,7 +420,7 @@ body {
     padding: 20px;
 }
 
-.bottom-wrapper_solving{
+.bottom-wrapper_solving {
     width: 40vw;
     height: 250px;
     background-color: #fff;
@@ -432,7 +436,7 @@ body {
 .bottom-wrapper_input {
     max-width: 100px;
     font-size: var(--index);
-    border-style: none; 
+    border-style: none;
     outline-style: none;
     margin-left: -30px;
     border-radius: 50px;
@@ -443,7 +447,7 @@ body {
 
 .bottom-wrapper_input::placeholder {
     color: #4A4A4A;
-    border-style: none; 
+    border-style: none;
 }
 
 .keyboard {
@@ -539,11 +543,11 @@ body {
     padding: 15px;
 }
 
-.button-wrapper_btn{
+.button-wrapper_btn {
     transition: all .5s ease;
 }
 
-.button-wrapper_btn:hover{
+.button-wrapper_btn:hover {
     transform: scale(1.1);
 }
 
@@ -558,22 +562,24 @@ body {
 
 @media (max-width: 1330px) {
     .solving-mobile {
-        font-size: 15px;;
+        font-size: 15px;
+        ;
     }
 }
 
 @media (max-width: 1030px) {
-    .bottom-wrapper_solving{
+    .bottom-wrapper_solving {
         padding: 35px 5px;
         width: 43vw !important;
     }
 }
 
 @media (max-width: 768px) {
-    .middle-wrapper_task{
+    .middle-wrapper_task {
         height: 250px;
     }
-    .middle-wrapper_img{
+
+    .middle-wrapper_img {
         height: 250px;
     }
 
@@ -581,13 +587,13 @@ body {
         height: 350px;
     }
 
-    .bottom-wrapper_solving{
+    .bottom-wrapper_solving {
         margin: 0 auto;
         padding: 35px 5px;
         width: 80vw !important;
     }
 
-    .bottom-wrapper_button{
+    .bottom-wrapper_button {
         margin-top: 0;
     }
 
@@ -597,10 +603,11 @@ body {
 }
 
 @media (max-width: 450px) {
-    .header-wrapper_task{
+    .header-wrapper_task {
         width: 250px;
     }
-    .svg{
+
+    .svg {
         position: static;
         margin: 0;
         margin-right: 40px;
@@ -622,7 +629,6 @@ body {
     .middle-wrapper_task {
         padding: 20px;
         font-size: 15px;
-        
     }
 
     .middle-wrapper_img {
@@ -635,7 +641,7 @@ body {
         height: 320px;
     }
 
-    .bottom-wrapper{
+    .bottom-wrapper {
         margin: 0;
         margin-top: 20px;
     }
@@ -648,6 +654,7 @@ body {
         width: 50px;
         font-size: 15px;
     }
+
     .keyboard {
         margin: 0;
     }
@@ -656,9 +663,11 @@ body {
         margin-left: 20px !important;
         margin-top: -140px !important;
     }
+
     .bottom-wrapper_input_btnClose_mobile {
         margin-left: -25px !important;
     }
+
     .bottom-wrapper_input_btnClose_mobile_succes {
         margin-left: 100px !important;
         margin-top: -200px !important;
@@ -675,40 +684,50 @@ body {
         margin: 0;
         transform: scale(0.7);
     }
+
     .bottom-wrapper_input {
         width: 60px;
     }
+
     .keyboard {
         margin: 0;
     }
 }
 
 @media (max-width: 330px) {
-    .header-wrapper_task{
+    .header-wrapper_task {
         width: 230px;
     }
+
     .middle-wrapper_task {
         font-size: 13px;
     }
+
     .button-wrapper_btn {
         font-size: 8px;
     }
+
     .button-answer_x {
         padding: 3px;
     }
+
     .bottom-wrapper_button {
         margin-left: -10px;
     }
+
     .svg {
         margin-right: 20px;
     }
+
     .bottom-wrapper_input_btnClose {
         margin-left: 100px !important;
         margin-top: -180px !important;
     }
+
     .bottom-wrapper_input_btnClose_mobile {
         margin-left: -25px !important;
     }
+
     .bottom-wrapper_input_btnClose_mobile_succes {
         margin-left: 50px !important;
         margin-top: -230px !important;
